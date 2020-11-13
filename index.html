@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+  <meta name="author" content="Dain Kim">
+
+  <meta name="keywords" content="이미지 테스트, 나를 알아보는 10가지 질문, 10-things-test, 3분이미지테스트, 이미지테스트">
+  <meta name="description" content="이미지 테스트: 나를 알아보는 10가지 질문">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="나를 알아보는 10가지 질문">
+  <meta property="og:description" content="사람들이 보는 나는 어떤 이미지일까?">
+  <meta property="og:image" content="img/og-logo.jpg">
+  <meta property="og:url" content="https://dev-dain.github.io/10-things-test/">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="shortcut icon" type="text/css" href="img/favicon.png">
+  <link rel="appel-touch-icon-precomposed" href="img/favicon.png">
+  <title>
+    나를 알아보는 10가지 질문
+  </title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header+footer.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/qna.css">
+  <link rel="stylesheet" href="css/calc.css">
+  <link rel="stylesheet" href="css/result.css">
+  <!--[if lt ie 11]> 
+    <script>
+      alert('IE 11 미만 브라우저에서는 정상적으로 동작하지 않습니다.\n다른 브라우저(크롬, 파이어폭스 등)를 이용해주세요.');
+    </script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <button class="logo head" onclick=javascript:switchMode()></button>
+    </header>
+    <section id="welcome" class="container">
+      <div id="title-box">
+        <h1 class="title">
+          주.새.위<br>
+          PROJECT
+        </h1>
+        <h3 class="sec-tit">
+          주저하는 새신자를 위한<br>
+          S식 심리테스트
+        </h3>
+        <span class="time-logo"></span>
+        <div>소요 시간 : 3분 내외</div>
+      </div>
+      <hr class="w-line">
+      <p class="w-line">
+        <span id="p-tit">이 테스트로 당신은...</span><br>
+        타인이 보는 당신의 이미지를 알 수 있습니다.<br>
+        현대인에게 자신의 장단점을 제대로 알고 이미지를 관리하는 것은
+        성공적인 사회 생활과 좋은 평판을 얻기 위해 필수적입니다.
+        테스트 결과로 사람들이 보는 당신의 이미지와 그 강점을 알아보세요!
+      </p>
+      <hr class="w-line">
+      <div id="name-input">
+        <input type="text" placeholder="이름" autofocus>
+      </div>
+      <p class="check-name warning"></p>
+      <div class="start-wrap">
+        <button class="start">시 작</button>
+      </div>
+    </section>
+    <section id="qna" class="container">
+      <div class="status-bar">
+        <div class="status"></div>
+      </div>
+      <div class="q box"></div>
+      <div class="answer"></div>
+    </section>
+    <section id="calc">
+      <div class="calc-bar">
+        CALCULATING
+        <div class="calc"></div>
+      </div>
+      <p class="wait">잠시 기다려주세요...</p>
+    </section>
+    <section id="result" class="container">
+      <div id="score-box">
+        <div class="p title"></div>
+        <div class="point"></div>
+        <div class="pin"></div>
+        <div class="score-bar"></div>
+      </div>
+      <div id="desc-box">
+        <div class="art"></div>
+        <div class="result title"></div>
+        <div class="res desc"></div>
+        <span class="go-artist highlight" onclick=javascript:goArtist()>
+          그림이 마음에 드시나요?
+        </span>
+      </div>
+      <hr>
+      <button onclick=javascript:copy() class="btn">링크 복사하기</button>
+      <hr>
+      <div id="intro-box">
+        <div class="pro_pic"></div>
+        <button class="art-sns btn">
+          <a href="https://www.instagram.com/gyeoly27/" target="_blank" title="작가 인스타그램">
+            작품 더 보기
+          </a>
+        </button>
+      </div>
+      <hr>
+      <div class="caution">
+        <p>
+            발신 : 새신자부장,팀장<br>
+            수신 : 청년회 새신자<br><br>
+            
+            새신자란? 입교 후 1년 미만의 성도<br>
+            11월 기준 (36년 11월 ~ 37년 11월)<br><br>
+            
+            🤔천국에 들어갈 소망을 가득안고 신천지에 입교한 나는야 블링블링 새신자.!<br>
+            😖그렇지만 변화해야할 것, 갖춰야할 것들이 너무 많다ㅠ!<br><br>
+            
+            👉🏻혼자서 끙끙 앓고 있는 새신자들 모두 주목주목<br>
+            😎상담사 매칭부터, 꾸준한 1:1 피드백까지<br>
+            혼자 짊어지지말고 새신자부에게 맡겨주세요-!👩 ❤ 👨<br>
+            (이름하여) ‘주.새.위’<br><br>
+            
+            👉🏻진행 방법 :<br>
+            1.아래 양식 작성하여 새신자부 팀장에게 제출(문의참고)<br>
+            2.새신자부에서 요청유형에 맞는 상담사 매칭<br>
+            3. 문제가 '해결 될때까지' 함께 해결<br><br>
+            
+            -----------------------------------<br>
+            이름 :<br>
+            성별 :<br>
+            나이 :<br>
+            입교년월 : <br>
+            해결되야할 사항 :<br>
+            -----------------------------------<br>
+            
+            문의) 새신자부 심유민팀장(대학.화정 담당) 010-5395-0685<br><br>
+        </p>
+      </div>
+      <hr>
+      <div class="caution">
+      </div>
+      <hr>
+      </button>
+    </section>
+    <footer id="footer">
+    </footer>
+  </div>
+  <script src="js/darkmode.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/share.js"></script>
+</body>
+
+</html>
